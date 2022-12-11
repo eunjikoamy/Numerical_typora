@@ -879,8 +879,6 @@ void QRdecomp(Matrix U, Matrix Q, Matrix R) {
 
 
 
-
-
 ## ODE _ IVP ##
 
 ### ODE part1 ##
@@ -906,6 +904,8 @@ double myFunc(const double t, const double v) {
 
 
 ### Euler's explicit method ###
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211183929066.png" alt="image-20221211183929066" style="zoom:50%;" />
 
 void odeEU(double myfunc(const double t, const double y), double y[], double t0, double tf, double h, double y0);
 
@@ -956,6 +956,8 @@ void odeEU(double myfunc(const double t, const double y), double y[], double t0,
 
 
 ### Euler's modified explicit method ###
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211183942418.png" alt="image-20221211183942418" style="zoom: 67%;" />
 
 void odeEM(double myfunc(const double t, const double y), double y[], double t0, double tf, double h, double y0);
 
@@ -1016,6 +1018,8 @@ void odeEM(double myfunc(const double t, const double y), double y[], double t0,
 
 
 ### second order runge- kutta ###
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211183958787.png" alt="image-20221211183958787" style="zoom:67%;" />
 
 void odeRK2(double myfunc(const double t, const double y), double y[], double t0, double tf,double h, double y0);
 
@@ -1307,7 +1311,17 @@ A mass-spring damper (m-c-k) system is a second order ODEWhere  F(t) is the inpu
 
 ## Linear Regression ## 
 
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184012300.png" alt="image-20221211184012300" style="zoom:67%;" />
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184030204.png" alt="image-20221211184030204" style="zoom:67%;" />
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184039295.png" alt="image-20221211184039295" style="zoom:67%;" />
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184050994.png" alt="image-20221211184050994" style="zoom:67%;" />
+
 curve fitting : minimize the total residual 
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184111024.png" alt="image-20221211184111024" style="zoom:67%;" />
 
 ```c++
 int M = 6; // 6 개의 데이터 
@@ -1358,7 +1372,7 @@ Matrix	linearRegression(Matrix x, Matrix y) {
 
 ## Non-linear system with Jacobian 
 
-
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184126663.png" alt="image-20221211184126663" style="zoom:67%;" />
 
 ```c++
 void main() {
@@ -1515,6 +1529,14 @@ Matrix myJacob2(Matrix X) {
 
 
 
+*** examples ***
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184140349.png" alt="image-20221211184140349" style="zoom:67%;" />
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184151641.png" alt="image-20221211184151641" style="zoom:67%;" />
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184205082.png" alt="image-20221211184205082" style="zoom:67%;" />
+
 ## polyfit 
 
 : curve fitting with a higher order poly
@@ -1586,11 +1608,16 @@ Matrix	polyfit(Matrix x, Matrix y, int n) {
 
 
 
+*** exercises ***
+
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184357825.png" alt="image-20221211184357825" style="zoom:67%;" />
 
 
 
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184404858.png" alt="image-20221211184404858" style="zoom:67%;" />
 
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184413489.png" alt="image-20221211184413489" style="zoom:67%;" />
 
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184422601.png" alt="image-20221211184422601" style="zoom:67%;" />
 
-
-
+<img src="C:\Users\eunji\AppData\Roaming\Typora\typora-user-images\image-20221211184431282.png" alt="image-20221211184431282" style="zoom:67%;" />
